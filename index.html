@@ -1,5 +1,70 @@
 <!DOCTYPE html>
-<html>
-<head><title>CupidAzul</title></head>
-<body><h1>Bem-vindo ao CupidAzul!</h1><p>Site em construção.</p></body>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupidAzul | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .accent-blue { color: #38bdf8; }
+        .btn-grad { background: linear-gradient(to right, #38bdf8, #818cf8); transition: 0.3s; }
+        .btn-grad:hover { opacity: 0.9; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="p-6">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/ogw/AF2bZyiQVW4PvkpBJLnmvMrJprjyKQfNOkWu6hgfoGyNM2rYTWA=s64-c-mo" 
+                     alt="Logo" class="w-10 h-10 rounded-full border-2 border-sky-400">
+                <span class="text-xl font-bold tracking-tight">cupid<span class="accent-blue">azul</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#" class="hover:text-sky-400 transition">Projetos</a>
+                <a href="#" class="hover:text-sky-400 transition">Tecnologias</a>
+                <a href="#" class="hover:text-sky-400 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-5xl mx-auto px-6 py-20 flex flex-col items-center text-center">
+        <div class="mb-6 inline-block px-4 py-1 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-sm">
+            Disponível para novos projetos
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            Construindo o futuro da <br><span class="accent-blue italic">Web Moderna.</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl mb-10">
+            Olá, eu sou o developer por trás do **CupidAzul**. Especialista em transformar ideias em experiências digitais de alta performance e design impecável.
+        </p>
+        <div class="flex gap-4">
+            <a href="https://github.com" class="btn-grad px-8 py-3 rounded-lg font-bold">Ver GitHub</a>
+            <a href="#" class="glass px-8 py-3 rounded-lg font-bold hover:bg-slate-800 transition">Contactar</a>
+        </div>
+    </main>
+
+    <!-- Tech Stack -->
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <div class="glass rounded-2xl p-8 flex flex-wrap justify-center gap-12 opacity-80">
+            <i class="fab fa-html5 text-4xl hover:text-orange-500 transition"></i>
+            <i class="fab fa-css3-alt text-4xl hover:text-blue-500 transition"></i>
+            <i class="fab fa-js text-4xl hover:text-yellow-400 transition"></i>
+            <i class="fab fa-react text-4xl hover:text-sky-400 transition"></i>
+            <i class="fab fa-node-js text-4xl hover:text-green-500 transition"></i>
+            <i class="fab fa-python text-4xl hover:text-blue-400 transition"></i>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-20 text-slate-500 text-sm">
+        <p>© 2024 cupidazul.is-a.dev • Made with 💙</p>
+    </footer>
+
+</body>
 </html>
